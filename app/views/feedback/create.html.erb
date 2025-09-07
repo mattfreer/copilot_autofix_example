@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Thank you for your feedback!</h1>
+  <p>Here's what we received:</p>
+  <p class="feedback-message">"<%= params[:message].html_safe %>"</p>
+
+  <div class="actions">
+    <%= link_to "Submit More Feedback", feedback_new_path, class: "button" %>
+  </div>
+</div>
