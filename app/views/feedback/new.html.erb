@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Leave your feedback</h1>
+
+  <%= form_with(url: feedback_create_path, local: true) do |form| %>
+    <div class="field">
+      <%= form.label :message %>
+      <%= form.text_area :message, placeholder: "Enter your message here..." %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit "Submit Feedback" %>
+    </div>
+  <% end %>
+</div>
